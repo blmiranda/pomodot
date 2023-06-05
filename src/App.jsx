@@ -1,6 +1,7 @@
 import { useState } from 'react';
 import './CSS/index.css';
 import Timer from './components/Timer';
+import ProgressCircle from './components/ProgressCircle';
 import useTimer from './hooks/useTimer';
 import { handleStart, handleStop } from './functions/progress-animation';
 
@@ -20,21 +21,7 @@ const App = () => {
 
   return (
     <section className="timer-wrapper">
-      <svg>
-        <circle r="49.45%" cx="50%" cy="50%" className="track"></circle>
-        <circle
-          r="49.45%"
-          cx="50%"
-          cy="50%"
-          className="progress-circle"
-        ></circle>
-        <circle
-          r="49.45%"
-          cx="50%"
-          cy="50%"
-          className="break-progress"
-        ></circle>
-      </svg>
+      <ProgressCircle />
 
       <div className="inner-wrapper">
         <Timer minutes={minutes} seconds={seconds} />

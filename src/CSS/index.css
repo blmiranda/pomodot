@@ -170,7 +170,7 @@ MEDIA QUERIES
 ===============================
 */
 
-/* @media only screen and (max-width: 600px) {
+@media only screen and (max-width: 600px) {
   #root {
     transform: scale(0.8);
   }
@@ -187,4 +187,26 @@ MEDIA QUERIES
   button {
     transform: scale(1.4);
   }
-} */
+}
+@media only screen and (max-width: 420px) {
+  #root {
+    transform: scale(0.6);
+  }
+
+  .timer {
+    font-size: 2.6rem;
+  }
+}
+@media only screen and (max-width: 360px) {
+  #root {
+    transform: scale(0.5);
+  }
+
+  .timer {
+    font-size: 3rem;
+  }
+
+  button {
+    transform: scale(1.8);
+  }
+}
